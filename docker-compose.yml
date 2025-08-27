@@ -6,10 +6,3 @@ services:
       - "9090:8080"
     volumes:
       - /mnt/TANK/docker/ai/openwebui/data:/app/backend/data
-  mcpo-proxy:
-    image: ghcr.io/open-webui/mcpo:main
-    ports:
-      - "8000:8000"
-    volumes:
-      - /mnt/TANK/docker/ai/mcpo-proxy/app:/app
-    restart: unless-stopped  
