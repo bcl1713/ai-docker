@@ -7,7 +7,7 @@ services:
     volumes:
       - /mnt/TANK/docker/ai/openwebui/data:/app/backend/data
   mcpo-proxy:
-    image: ghcr.io/model-context-protocol/mcpo:latest
+    image: ghcr.io/open-webui/mcpo:main
     ports:
       - "8000:8000"
     command: --tcp-downstream 192.168.86.3:8999
