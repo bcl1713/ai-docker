@@ -10,5 +10,6 @@ services:
     image: ghcr.io/open-webui/mcpo:main
     ports:
       - "8000:8000"
-    command: --tcp-downstream 192.168.86.3:8999
+    volumes:
+      - /mnt/TANK/docker/ai/mcpo-proxy/app:/app
     restart: unless-stopped  
